@@ -4,14 +4,14 @@
 
 #include "Kismet/GameplayStatics.h"
 
-bool USkywalkerSceneSubsystem::LoadLevel(const FName &InLevelName)
+bool USkywalkerSceneSubsystem::LoadStreamLevel(const FName &InLevelName)
 {
 	UGameplayStatics::LoadStreamLevel(this, InLevelName, true, true, FLatentActionInfo());
 
 	return true;
 }
 
-bool USkywalkerSceneSubsystem::UnLoadLevel(const FName &InLevelName)
+bool USkywalkerSceneSubsystem::UnloadStreamLevel(const FName &InLevelName)
 {
 	UGameplayStatics::UnloadStreamLevel(this, InLevelName, FLatentActionInfo(), true);
 

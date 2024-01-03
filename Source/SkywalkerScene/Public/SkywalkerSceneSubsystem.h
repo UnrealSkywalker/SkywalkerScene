@@ -16,8 +16,8 @@ class SKYWALKERSCENE_API USkywalkerSceneSubsystem : public UGameInstanceSubsyste
 
 public:
 	UFUNCTION(BlueprintCallable, Category = SkywalkerScene)
-	bool LoadLevel(const FName &InLevelName);
+	bool LoadStreamLevel(const FName &InLevelName);
 
 	UFUNCTION(BlueprintCallable, Category = SkywalkerScene)
-	bool UnLoadLevel(const FName &InLevelName);
+	bool UnloadStreamLevel(const FName &InLevelName);
 };
